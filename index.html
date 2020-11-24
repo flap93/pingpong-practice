@@ -5,54 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ping Pong</title>
 </head>
+
+
 <body>
     <canvas id="canvas"></canvas>
-    
-    <script type="text/javascript">   
-    const WIDTH=400,
-          HEIGHT=450;
-          paddlewidth=90,
-          paddleheight=15,
-    canvas=document.getElementById('canvas');
-    canvas.width = WIDTH;
-    canvas.height = HEIGHT;
-    canvas.style.background = 'wheat'; // this makes the color of the bkg
-
-
-    
-        const context = canvas.getContext('2d');
-        // Player function
-        function Player() {
-            this.paddle = new paddle(width/2-paddlewidth/2,height-paddleheight,paddlewidth,paddleheight);
-
-        }
-        player.prototype.drawplayer = function() {
-            this.paddle.drawPaddle();
-        };
-
-        // CPU Player function
-        
-        // Paddle function
-        function Paddle(x, y, paddlewidth, paddleheight) {
-            this.x = x;
-            this.y = y;
-            this.width = paddlewidth;
-            this.height = paddleheight;
-            this.xDirSpeed = 0;
-
-        }
-// this creates the size,color  of rec
-        Paddle.prototype.drawPaddle = function() {
-            context.context.beginPath();
-            context.fillStyle = "#00cc00";
-            context.fillRect(this.x, this.y, this.width, this.height);
-            contex.context.closePath();
-            
-        };
-
-
-
-    </script> 
+    <script src="script.js" type="text/javascript"></script>
 </body>
-</html>
+
+</html> 
+    
     
